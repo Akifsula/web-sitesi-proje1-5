@@ -1,17 +1,13 @@
 const slider = document.querySelector('.memleketim-liste');
-const slides = document.querySelectorAll('.memleket-fotolar');
-const arrow = document.querySelector('.arrow');
+const sliderItems = document.querySelectorAll('.memleket-fotolar');
+const arrowRight = document.querySelector('.arrow-right');
 
-let currentSlide = 0;
-const slideWidth = slides[currentSlide].clientWidth;
+let activeIndex = 0;
 
-slider.style.width = slideWidth * slides.length + 'px';
-
-arrow.addEventListener('click', function() {
-  if (currentSlide >= slides.length - 1) {
-    currentSlide = 0;
-  } else {
-    currentSlide++;
+arrowRight.addEventListener('click', () => {
+  activeIndex++;
+  if (activeIndex >= sliderItems.length) {
+    activeIndex = 0;
   }
-  slider.style.transform = 'translateX(' + (-slideWidth * currentSlide) + 'px)';
+  slider.style.transform = `translateX(-${activeIndex * sliderItems[0].clientWidth}px)`;
 });
