@@ -1,0 +1,478 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root{
+     --main-color: #110202;
+     --black-color: #121212;
+     --border: 0.1rem solid rgba(255,255,255,0.4);
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    border: none;
+    transition: 0.2s ease;
+    font-family: 'Poppins', sans-serif;
+}
+/*! temel html kodları */
+html{
+    font-size: 62.5%; 
+    overflow-x: hidden ;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+
+}
+body{
+    background-color: var(--main-color);
+    height: 200vh;
+}
+section{
+    padding: 3rem 2%;
+
+}
+.btn{
+    margin-top: 2rem;
+    display:inline-block;
+    padding: 2rem 3.75rem;
+    border-radius: 30rem;
+    font-size: 1.7rem;
+    color:black;
+    background-color:white;
+    cursor:pointer;
+}
+/*! header başlangıcı */
+.header .helo img {  
+    height: 13rem;
+    border-radius: 30rem;
+    
+}
+ 
+.header {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    margin: 2rem 7%;
+    border-radius: 30rem;
+    box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.75)
+}
+.header .navbar a{
+    margin: 0 2rem;
+    font-size: 1.8rem;
+    color: var(--black-color);
+    border-bottom: 0.1rem solid transparent;
+}
+.header .navbar .active,
+.header .navbar a:hover{
+    border-color:rgba(111, 9, 87, 0.855);
+    padding-bottom: 0.5rem;
+    border-width: 0.3rem;
+    font-size: 1.6rem; 
+}
+.header .buttons button{
+    cursor:pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    background-color: transparent;
+
+
+}
+
+/*! header bitişi */
+/*! hakkımda başlangıç */
+.hakkımda{
+    min-height: 100vh;
+    background: url(../images/arkaplan.jpg) no-repeat;
+    background-size: cover;
+    background-position:initial;
+    display: flex;
+    
+      
+}
+.hakkımda .content{
+    max-width: 60rem;
+    color:white;
+}
+.hakkımda .content h3{
+    font-size: 6rem;
+    color:white;
+    align-items:inherit;
+}
+.hakkımda .content p{ 
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color:white;
+    margin-top: 4rem;
+}
+.hayatım{
+    min-height: 100vh;
+    background: url(../images/arkaplan.jpg) no-repeat;
+    background-size: cover;
+    background-position:initial;
+    display: flex;
+}
+.hayatım .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+.hayatım .box-container .box{
+    padding: 3rem;
+    background-color: white;
+    border-radius: 3rem;
+    min-height: 60rem;
+    display: flex; 
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    
+}
+.hayatım .box-container .box img {
+    
+    width: 100%;
+    object-fit: cover;
+    border-radius: 30rem;
+    border: 2px solid purple;
+    margin-bottom: 2rem;   
+}
+.hayatım .box-container .box .box1{
+    font-size: 1.6rem;
+    padding-bottom: 2rem;
+    text-decoration: underline;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+.hayatım .box-container .box .box2{
+    font-size: 1.6rem;
+    padding-bottom: 2rem;
+    text-decoration: underline;
+    font-family: sans-serif;
+    font-weight: 500;
+    margin-bottom: 2rem; 
+}
+.hayatım .box-container .box .box3{
+    font-size: 1.6rem;
+    padding-bottom: 2rem;
+    text-decoration: underline;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+.hayatım .box-container .box .box4{
+    font-size: 1.6rem;
+    padding-bottom: 2rem;
+    text-decoration: underline;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+.özgeçmiş{
+    min-height: 100vh;
+    background: url(../images/arkaplan2.jpg) no-repeat;
+    background-size: cover;
+    background-position:initial;
+    display: flex;
+}
+.özgeçmiş .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem, 1fr));
+    gap: 2.5rem;
+}
+.özgeçmiş .başlık {
+  float: left;
+  clear: both;
+  margin-right: 20px;
+  width: 120px; /* yan başlığın genişliği */
+  margin-bottom: 10rem;
+  padding: 10px; /* içeriğin etrafına 10 piksel boşluk bırakacak */
+  color: white;
+  writing-mode: vertical-lr; /* Metni dikey şekilde sola doğru yazdırır */
+  transform: rotate(-180deg); /* Metnin ters yönüne çevirir */
+  left: 0; /* Ekranın solunda başlayacak */
+  padding: 20px; /* Metnin etrafında boşluk bırakır */
+  font-size: 24px; /* Yazı boyutu */
+  font-size: 7rem ;
+  
+}
+.özgeçmiş .box-container .box {
+border: var(--border);
+text-align: center;
+padding: 3rem 2rem;
+background-color: rgba(128, 128, 128, 0.5);
+border-radius: 3rem;
+}
+.özgeçmiş .box-container .box p {
+    padding: 1.2rem ;
+    margin: 10px 0;
+    font-size: large;
+    color:white;
+}
+.özgeçmiş .box-container .box .cv1 {
+height: 5rem;
+width: 5rem;
+border: 5px ridge purple;
+object-fit: cover;
+}
+.özgeçmiş .box-container .box .cvresim {
+height: 10rem;
+width: 10rem;
+border-radius: 20rem;
+object-fit:unset;
+margin-top: 3rem;
+
+}
+.özgeçmiş .box-container .box h3 {
+    padding: 1rem 0;
+    font-size: 2rem;
+    color: white;
+    text-decoration: underline;
+
+}
+.özgeçmiş .box-container .box .icons {
+    font-size: 2rem;
+    color: goldenrod;
+}
+.özgeçmiş .box-container .box .list {
+    list-style-type: disc; padding-left: 5rem;
+    color:white;
+}
+.memleketim-container {
+    margin-left: 7rem;
+}
+.memleketim-liste {
+    list-style: none;
+    padding: 0;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    transform: translate(0);
+    transition: 1s all ease-in-out;
+
+}
+.memleket-fotolar-slider {
+    width: 350px;
+    height: 280px;
+    object-fit: cover;
+    transition: 1s all ease-in-out;
+}
+.fotolar-info-başlık {
+    background-color: rgb(40,40,40,0.4);
+    padding: 0 10px;
+    font-size: large;
+    position: absolute;
+    top: 10%;
+    left: 50px;
+    color: white;
+    opacity: 0;
+    transition: 1s all ease-in-out;
+
+}
+.memleket-fotolar {
+    position: relative;
+    
+}
+.memleket-fotolar:hover .fotolar-info-başlık {
+    opacity:1;
+}
+.memleket-fotolar:hover .memleket-fotolar-slider {
+    transform: scale(1.2);
+    margin: 0 30px;
+    opacity: .6;
+}
+.memleketim-wrapper {
+    overflow: hidden;
+    position: relative;
+}
+.arrow{
+    width: 100px;
+    display: flex;
+    position: absolute;
+    font-size: 120px;
+    right: 0;
+    top: 100px;
+    opacity: 0.6;
+    color: black;
+    transition: .5s ease all;
+}
+.arrow:hover{
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.mycity .content-wrapper .photo-list-wrapper .photo-list{
+    list-style: none;
+    padding: 0;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    transform: translateX(0);
+    transition: 1s all ease-in-out;
+}
+
+.mycity .content-wrapper .photo-list-wrapper{
+    overflow: hidden;
+    position: relative;
+}
+
+.mycity .content-wrapper .photo-list-wrapper .photo-list .photo-item{
+    position: relative;
+}
+
+.mycity .content-wrapper .photo-list-wrapper .photo-list .photo-item:hover .photo-item-img{
+    transform: scale(1.2);
+    margin: 0 30px;
+}
+
+.mycity .content-wrapper .photo-list-wrapper .photo-list .photo-item .photo-item-img{
+    width: 270px;
+    height: 200px;
+    object-fit: cover;
+    transition: 1sn all ease-in-out;
+}
+.mycity{
+min-height: 100vh;
+background: url(../images/background3.jpg) repeat;
+background-size: cover;
+background-position:initial;
+display: flex;
+}
+.mycity-photo{
+    min-height: 100vh;
+    background: url(../images/background3.jpg) repeat;
+    background-size: cover;
+    background-position:initial;
+    display: flex;
+    }
+
+
+
+.mycity .content-wrapper .title{
+    width: 550px;
+    display: flex;
+    align-content: center;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    color:rgb(28, 13, 31);
+    font-size: 30px;
+    border-radius: 20px;
+    border-style:dashed;
+}
+
+.mycity-photo .content-wrapper .title{
+    width: 550px;
+    display: flex;
+    align-content: center;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    color:rgb(28, 13, 31);
+    font-size: 40px;
+    border-radius: 20px;
+    border-style:dashed;
+}
+
+
+.mycity .content-wrapper .info{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.mycity-photo .content-wrapper .galery{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.mycity .content-wrapper .info .box{
+    width: 800px;
+    height: 250px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    margin: 0;
+    color: black;
+    border-radius: 10px;
+    border-style: double;
+
+}
+
+.mycity-photo .content-wrapper .box{
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 5px;
+    margin: 10px 0;
+    color: black;
+    border-radius: 10px;
+    border-style: double;
+}
+
+.mycity-photo .content-wrapper .box h1{
+    border-bottom: 2px solid rgb(28, 13, 31);
+    padding: 0;
+}
+
+.mycity-photo .content-wrapper .galery .box{
+    width: 300px;
+    height: 350px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 5px;
+    margin:  0;
+    color: black;
+    border-radius: 10px;
+    border-style: double;
+
+}
+
+.mycity-photo .content-wrapper .box p{
+    padding: 5px;
+    margin: 5px;
+    text-transform: none;
+}
+
+.mycity .content-wrapper .info h1{
+    border-bottom: 2px solid rgb(28, 13, 31);
+    padding: 5px;
+}
+
+.mycity .content-wrapper .info p{
+    padding: 5px;
+    margin: 5px;
+    text-transform: none;
+}
+
+.mycity-photo .content-wrapper .galery h1{
+    border-bottom: 2px solid rgb(28, 13, 31);
+    padding: 5px;
+}
+
+.mycity-photo .content-wrapper .galery p{
+    padding: 5px;
+    margin: 5px;
+    text-transform: none;
+}
+
+.mycity-photo .content-wrapper .galery .box img{
+    width: 230px;
+    height: 100px;
+}
+*/
