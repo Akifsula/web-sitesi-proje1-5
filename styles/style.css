@@ -294,11 +294,13 @@ margin-top: 3rem;
     display: flex;
     position: absolute;
     font-size: 120px;
-    right: 0;
-    top: 100px;
+    right: 20px;
+    top: 50px;
     opacity: 0.6;
     color: black;
     transition: .5s ease all;
+    cursor: pointer;
+    transform: translateY(-50);
 }
 .arrow:hover{
     opacity: 1;
